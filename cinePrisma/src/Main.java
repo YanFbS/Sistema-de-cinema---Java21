@@ -16,7 +16,7 @@ public class Main {
         }
 
         else if (menu == 2){
-            System.out.println("Saindo do CinePrisma...");
+            System.out.println("Saindo do CinePrisma....");
         }
 
         else {
