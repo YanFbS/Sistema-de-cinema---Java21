@@ -12,7 +12,7 @@ public class Main {
         int menu = scan.nextInt();
 
         if (menu == 1){
-            System.out.println("AQQUI EXIBIR SESSÕES");
+            System.out.println("AQUI EXIBIR SESSÕES");
         }
 
         else if (menu == 2){
@@ -20,7 +20,7 @@ public class Main {
         }
 
         else {
-            System.out.println(("Opa! Apenas 1 ou 2"));
+            System.out.println(("Opa! Digite apenas 1 ou 2"));
         }
     }
 }
