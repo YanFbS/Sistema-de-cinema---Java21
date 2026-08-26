@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
         System.out.println("-".repeat(11) + " CinePrisma " + "-".repeat(11));
+
         System.out.println("\nBem vindos ao CinePrisma!");
 
         exebirMenu(scan);
@@ -25,7 +26,7 @@ public class Main {
         }
 
         else {
-            System.out.println(("Opa! Digite apenas 1 ou 2"));
+            System.out.println(("Ops! Digite apenas 1 ou 2."));
             exebirMenu(scan);
         }
     }
