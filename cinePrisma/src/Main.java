@@ -8,13 +8,17 @@ public class Main {
 
         System.out.println("\nBem vindos ao CinePrisma!");
 
+        exebirMenu(scan);
+    }
+
+    public static void exebirMenu(Scanner scan){
         System.out.println("\nO que gostaria de fazer?: \n 1 - Ver sessões\n 2 - Sair");
+
         int menu = scan.nextInt();
+        scan.nextLine();
 
         if (menu == 1){
             System.out.println("AQUI EXIBIR SESSÕES");
-
-            // Cadastro de Usuarios pós compra
 
             System.out.println("-".repeat(11) + " CinePrisma " + "-".repeat(11));
 
@@ -42,6 +46,8 @@ public class Main {
             System.out.println("Nome: "+cadastro);
             System.out.println("Idade: "+idade);
             System.out.println("CPF: "+novocpf);
+            System.out.println("\nSaindo do programa...");
+
         }
 
         else if (menu == 2){
@@ -50,6 +56,7 @@ public class Main {
 
         else {
             System.out.println(("Opa! Digite apenas 1 ou 2"));
+            exebirMenu(scan);
         }
     }
 }
