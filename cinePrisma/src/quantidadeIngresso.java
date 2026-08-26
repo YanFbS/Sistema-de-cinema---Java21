@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class quantidadeIngresso {
 
-    private static void exibirSessoes(int sessao) {
+    public static void exibirSessoes (int sessao) {
         if (sessao > 10) {
             return;
         }
