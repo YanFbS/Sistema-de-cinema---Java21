@@ -27,7 +27,7 @@ public class Main {
         }
 
         else {
-            System.out.println(("Ops! Digite apenas 1 ou 2"));
+            System.out.println(("Ops! Digite apenas 1 ou 2."));
             exebirMenu(scan);
         }
     }
