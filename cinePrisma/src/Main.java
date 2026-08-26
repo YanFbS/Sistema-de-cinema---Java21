@@ -13,6 +13,28 @@ public class Main {
 
         if (menu == 1){
             System.out.println("AQUI EXIBIR SESSÕES");
+
+            // Cadastro de Usuarios pós compra
+
+            System.out.println("-".repeat(11) + " CinePrisma " + "-".repeat(11));
+
+            System.out.println("-".repeat(6) + " Cadastro CinePrisma " + "-".repeat(6));
+
+            System.out.println("Digite seu nome: ");
+            String cadastro = scan.nextLine();
+
+            System.out.println("Digite Sua idade: ");
+            int idade = scan.nextInt();
+
+            System.out.println("Digite seu CPF: ");
+            String cpf = scan.nextLine();
+            String SomenteNumeros = cpf.replaceAll("[.\\-\\s]","");
+
+            System.out.println("----- Dados Informados -----");
+            System.out.println("Nome: "+cadastro);
+            System.out.println("Idade: "+idade);
+            System.out.println("CPF: "+cpf);
+
         }
 
         else if (menu == 2){
