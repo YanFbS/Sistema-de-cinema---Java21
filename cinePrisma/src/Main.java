@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
         System.out.println("-".repeat(11) + " CinePrisma " + "-".repeat(11));
+
         System.out.println("\nBem vindos ao CinePrisma!");
 
         exebirMenu(scan);
@@ -32,13 +33,21 @@ public class Main {
 
             System.out.println("Digite seu CPF: ");
             String cpf = scan.nextLine();
-            //String somenteNumeros = cpf.replaceAll("[.\\-\\s]","");
 
-            System.out.println("----- Dados Informados -----");
+            String numcpf = cpf.replaceAll("[.\\-\\s]","");
+
+            String novocpf = numcpf.substring(0, 3) + "." +
+                    numcpf.substring(3, 6) + "." +
+                    numcpf.substring(6, 9) + "-" +
+                    numcpf.substring(9, 11);
+
+
+            System.out.println("\n------- Dados Informados -------");
             System.out.println("Nome: "+cadastro);
             System.out.println("Idade: "+idade);
-            System.out.println("CPF: "+cpf);
-            System.out.println("Saido do programa...");
+            System.out.println("CPF: "+novocpf);
+            System.out.println("\nSaindo do programa...");
+
         }
 
         else if (menu == 2){
@@ -46,7 +55,7 @@ public class Main {
         }
 
         else {
-            System.out.println(("Opa! Digite apenas 1 ou 2"));
+            System.out.println(("Ops! Digite apenas 1 ou 2"));
             exebirMenu(scan);
         }
     }
