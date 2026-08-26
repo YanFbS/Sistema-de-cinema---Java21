@@ -32,7 +32,7 @@ public class Main {
 
             System.out.println("Digite seu CPF: ");
             String cpf = scan.nextLine();
-            String somenteNumeros = cpf.replaceAll("[.\\-\\s]","");
+            //String somenteNumeros = cpf.replaceAll("[.\\-\\s]","");
 
             System.out.println("----- Dados Informados -----");
             System.out.println("Nome: "+cadastro);
