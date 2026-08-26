@@ -25,16 +25,23 @@ public class Main {
 
             System.out.println("Digite Sua idade: ");
             int idade = scan.nextInt();
+            scan.nextLine();
 
             System.out.println("Digite seu CPF: ");
             String cpf = scan.nextLine();
-            String SomenteNumeros = cpf.replaceAll("[.\\-\\s]","");
 
-            System.out.println("----- Dados Informados -----");
+            String numcpf = cpf.replaceAll("[.\\-\\s]","");
+
+            String novocpf = numcpf.substring(0, 3) + "." +
+                    numcpf.substring(3, 6) + "." +
+                    numcpf.substring(6, 9) + "-" +
+                    numcpf.substring(9, 11);
+
+
+            System.out.println("\n------- Dados Informados -------");
             System.out.println("Nome: "+cadastro);
             System.out.println("Idade: "+idade);
-            System.out.println("CPF: "+cpf);
-
+            System.out.println("CPF: "+novocpf);
         }
 
         else if (menu == 2){
