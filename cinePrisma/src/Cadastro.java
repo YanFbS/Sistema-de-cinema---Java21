@@ -1,11 +1,20 @@
 import java.util.Scanner;
 public class Cadastro {
+
+    public static String lerCpf(Scanner scan) {
+        System.out.println("Digite seu CPF: ");
+        String cpf = scan.nextLine();
+
+        String numcpf = cpf.replaceAll("[.\\-\\s]", "");
+
+        if (numcpf.length() != 11) {
+            System.out.println("CPF inválido! Digite novamente.");
+            return lerCpf(scan);
+        }
+        return numcpf;
+    }
     public static void main (String[] args){
         Scanner scan = new Scanner(System.in);
-
-        System.out.println("-".repeat(11) + " CinePrisma " + "-".repeat(11));
-
-        System.out.println("-".repeat(6) + " Cadastro CinePrisma " + "-".repeat(6));
 
         System.out.println("Digite seu nome: ");
         String cadastro = scan.nextLine();
