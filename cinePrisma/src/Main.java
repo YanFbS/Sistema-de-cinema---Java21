@@ -18,12 +18,11 @@ public class Main {
         scan.nextLine();
 
         if (menu == 1){
-            System.out.println("AQUI EXIBIR SESSÕES");
-
+            filmesEmCartaz.exibirfilmes(scan);
         }
 
         else if (menu == 2){
-            System.out.println("Saindo do CinePrisma...");
+            System.out.println("Saindo do CinePrisma....");
         }
 
         else {
