@@ -11,7 +11,7 @@ public class filmesEmCartaz {
             int continuar = scan.nextInt();
 
             if (continuar == 1){
-                System.out.println("Cadeiras");
+                sessoes.exibirsessoes(scan);
             }
 
             else if (continuar == 2){
@@ -24,7 +24,7 @@ public class filmesEmCartaz {
             int continuar = scan.nextInt();
 
             if (continuar == 1){
-                System.out.println("Cadeiras");
+                sessoes.exibirsessoes(scan);
             }
 
             else if (continuar == 2){
@@ -37,7 +37,7 @@ public class filmesEmCartaz {
             int continuar = scan.nextInt();
 
             if (continuar == 1){
-                System.out.println("Cadeiras");
+                sessoes.exibirsessoes(scan);
             }
 
             else if (continuar == 2){
@@ -50,7 +50,7 @@ public class filmesEmCartaz {
             int continuar = scan.nextInt();
 
             if (continuar == 1){
-                System.out.println("Cadeiras");
+                sessoes.exibirsessoes(scan);
             }
 
             else if (continuar == 2){
@@ -63,7 +63,7 @@ public class filmesEmCartaz {
             int continuar = scan.nextInt();
 
             if (continuar == 1){
-                System.out.println("Cadeiras");
+                sessoes.exibirsessoes(scan);
             }
 
             else if (continuar == 2){
@@ -76,7 +76,7 @@ public class filmesEmCartaz {
             int continuar = scan.nextInt();
 
             if (continuar == 1){
-                System.out.println("Cadeiras");
+                sessoes.exibirsessoes(scan);
             }
 
             else if (continuar == 2){
@@ -89,7 +89,7 @@ public class filmesEmCartaz {
             int continuar = scan.nextInt();
 
             if (continuar == 1){
-                System.out.println("Cadeiras");
+                sessoes.exibirsessoes(scan);
             }
 
             else if (continuar == 2){
