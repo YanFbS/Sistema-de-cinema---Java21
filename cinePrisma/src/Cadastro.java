@@ -13,11 +13,12 @@ public class Cadastro {
         }
         return numcpf;
     }
-    public static void main (String[] args){
-        Scanner scan = new Scanner(System.in);
+    public static void cadastro (Scanner scan){
 
         System.out.println("Digite seu nome: ");
         String cadastro = scan.nextLine();
+
+        mensagemFinal.nome = cadastro;
 
         System.out.println("Digite Sua idade: ");
         int idade = scan.nextInt();
@@ -38,7 +39,23 @@ public class Cadastro {
         System.out.println("Nome: "+cadastro);
         System.out.println("Idade: "+idade);
         System.out.println("CPF: "+novocpf);
-        System.out.println("\nSaindo do programa...");
+        System.out.println("\n 1 - Ver sessões 2 - Voltar");
+
+        int irVerFilmes = scan.nextInt();
+
+        if(irVerFilmes == 1){
+            filmesEmCartaz.exibirfilmes(scan);
+        }
+
+        else if (irVerFilmes == 2){
+            Main.exebirMenu(scan);
+        }
+
+        else{
+            System.out.println("Opção invalida! Escolha apenas 1 ou 2");
+            Cadastro.cadastro(scan);
+
+        }
 
     }
 }
