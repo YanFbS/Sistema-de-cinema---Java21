@@ -34,7 +34,7 @@ public class assentosVip {
 
         System.out.println("\nAssentos selecionados nesta compra: " + assentosSelecionados);
 
-        System.out.println("\nDigite a fileira (A-H) e a coluna (1-12) ex: C5 (1 - Prossegir 0 - Voltar):");
+        System.out.println("\nDigite a fileira (A-H) e a coluna (1-12) ex: C5 (1 - Prossegir):");
 
         String entrada = scan.nextLine().toUpperCase();
 
@@ -54,10 +54,6 @@ public class assentosVip {
 
             return;
 
-        }
-
-        else if (entrada.equals("0")){
-            sessoes.exibirsessoes(scan);
         }
 
         boolean reservado = processarReserva(entrada, assentos, fileiras, colunas);
