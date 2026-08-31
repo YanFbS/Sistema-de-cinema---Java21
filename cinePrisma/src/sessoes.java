@@ -234,7 +234,7 @@ public class sessoes {
             }
         }
         else if (escolherDia == 0){
-            Main.exebirMenu((scan));
+            filmesEmCartaz.exibirfilmes(scan);
             }else {
             System.out.println("\nOpa! Escolha uma opção válida");
             exibirsessoes(scan);
