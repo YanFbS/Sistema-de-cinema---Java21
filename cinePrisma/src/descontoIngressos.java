@@ -1,19 +1,64 @@
+import java.util.Locale;
 import java.util.Scanner;
 
-
 public class descontoIngressos {
-    public static void main(String[] args){
+    public static boolean eCrinca(int idade){
+        if (idade <12){
+            return true;
+        }   else {
+            return false;
+        }
+    }
+    public static boolean eIdoso(int idade){
+        if (idade >= 60){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-        System.out.println("\n" + "-".repeat(11) + " Política de Descontos CinePrisma " + "-".repeat(11) +"\n");
+    public static int validarCategoria(Scanner scan, int tipo, int idade){
+        if (tipo == 2 && !eCrinca(idade)){
+            System.out.println("\nA idade cadastrada não corresponde a 'Menor de 12 anos'.");
 
+            boolean estudante = perguntarEstudante(scan);
+
+            if (estudante){
+                return 4;
+            } else {
+                return 1;
+            }
+        }
+
+        if (tipo == 3 && !eIdoso(idade)){
+            System.out.println("\nA idade cadastrada não corresponde a 'Idoso (60+)'.");
+
+            boolean estudante = perguntarEstudante(scan);
+
+            if (estudante){
+                return 4;
+            } else{
+                return 1;
+            }
+        }
+        return tipo;
+    }
+    private static boolean perguntarEstudante(Scanner scan) {
+        System.out.println("Você é estudante ou professor? (s/n)");
+        String resposta = scan.nextLine().trim().toLowerCase();
+        if (resposta.equals("s")){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("1 - Menor de 12 anos (50% de desconto)\n" + "2 - Estudante/Professor (50% de desconto)\n" + "3 - Maior de 60 anos (30% de desconto)\n" + "4 - Nenhum desconto (sala VIP ou não se enquadra)\n" +"\n" + "Escolha sua opção:");
+        int idadeFalsa = 40; // simula uma idade, sem precisar do Cadastro
+        int tipoEscolhido = 2; // simula "cliente escolheu criança"
 
-        int opcaoDesconto = scan.nextInt();
-
-        if (opcaoDesconto == 1){
-
-        }
+        int resultado = validarCategoria(scan, tipoEscolhido, idadeFalsa);
+        System.out.println("Tipo final aplicado: " + resultado);
     }
 }
