@@ -233,5 +233,11 @@ public class sessoes {
                 exibirsessoes(scan);
             }
         }
+        else if (escolherDia == 0){
+            Main.exebirMenu((scan));
+            }else {
+            System.out.println("\nOpa! Escolha uma opção válida");
+            exibirsessoes(scan);
+        }
     }
 }

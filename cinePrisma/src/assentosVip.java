@@ -50,7 +50,7 @@ public class assentosVip {
 
             }
 
-            QuantidadeIngressoVIP.selecionarTiposIngresso(scan, assentosSelecionados);
+            quantidadeIngressoVIP.selecionarTiposIngresso(scan, assentosSelecionados);
 
             return;
 

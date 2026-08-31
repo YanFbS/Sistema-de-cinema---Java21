@@ -68,7 +68,7 @@ public class assentos3D {
 
             }
 
-            QuantidadeIngresso3D.selecionarTiposIngresso(scan, assentosSelecionados);
+            quantidadeIngresso3D.selecionarTiposIngresso(scan, assentosSelecionados);
 
             return;
 
