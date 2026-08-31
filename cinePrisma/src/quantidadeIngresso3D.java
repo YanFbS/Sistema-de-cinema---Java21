@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class QuantidadeIngresso3D {
+public class quantidadeIngresso3D {
 
     public static final String ANSI_RESET = "\u001B[0m";
 

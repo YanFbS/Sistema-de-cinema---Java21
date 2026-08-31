@@ -40,7 +40,6 @@ public class assentos {
 
         mensagemFinal.reiniciarAssentos();
 
-        scan.nextLine();
 
         executarMenu(assentos, fileiras, colunas, scan, 0);
 
@@ -68,7 +67,7 @@ public class assentos {
 
             }
 
-            QuantidadeIngresso.selecionarTiposIngresso(scan, assentosSelecionados);
+            quantidadeIngresso.selecionarTiposIngresso(scan, assentosSelecionados);
 
             return;
 
