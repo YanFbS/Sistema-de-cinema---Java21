@@ -7,11 +7,21 @@ public class Cadastro {
 
         String numcpf = cpf.replaceAll("[.\\-\\s]", "");
 
-        if (numcpf.length() != 11) {
+        if (!numcpf.matches("\\d{11}")) {
             System.out.println("CPF inválido! Digite novamente.");
             return lerCpf(scan);
         }
         return numcpf;
+    }
+    public static int leridade(Scanner scan) {
+        System.out.println("Digite sua idade: ");
+        String numidade = scan.nextLine();
+
+        if (!numidade.matches("\\d+")) {
+            System.out.println("Digite um número válido!");
+            return leridade(scan);
+        }
+        return Integer.parseInt(numidade);
     }
     public static void cadastro (Scanner scan){
 
